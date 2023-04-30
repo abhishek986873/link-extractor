@@ -1,18 +1,6 @@
-import docx
+
 import re
 
-link = docx.Document()
-x = int(input("ENTER TOTAL NUMBER OF LINK = "))
-y= x+1
-table = link.add_table(rows=y, cols=2)
-
-i = 1
-k = 1
-while i < y:
-    data_row = table.rows[i].cells
-    data_row[0].text = str(k)
-    k = k + 1
-    i = i + 1
 
 
 
@@ -20,10 +8,7 @@ while i < y:
 
 
 
-heading_row = table.rows[0].cells
 
-heading_row[0].text = "S.NO"
-heading_row[1].text = "LINK"
 
 
 
@@ -46,15 +31,6 @@ while True:
     # Create 1DM download link
     one_dm_link = f"https://prourl.xyz/1dm?vid={video_id}"
 
-i = 1
-while i < y:
-    data_row = table.rows[i].cells
-    data_row[1].text = one_dm_link
-    i = i + 1
-
-    # Print 1DM download link
-    # print(f"1DM download link: {one_dm_link}")
 
 
-nametosave = input("ENTER NAME TO SAVE = ")
-link.save(f"{nametosave}.pdf")
+print(one_dm_link)
