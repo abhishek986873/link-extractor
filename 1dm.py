@@ -1,18 +1,5 @@
 
 import re
-
-
-
-
-
-
-
-
-
-
-
-
-
 while True:
     # Prompt user for CloudFront MP4 video link
     cloudfront_link = input("Enter CloudFront MP4 video link (or press Enter to exit): ")
